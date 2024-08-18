@@ -1,6 +1,7 @@
-package com.example.cqrsbankingapp.service.event;
+package com.example.cqrsbankingapp.events;
 
 import com.example.cqrsbankingapp.domain.aggregate.Aggregate;
+import com.example.cqrsbankingapp.domain.model.Account;
 import com.example.cqrsbankingapp.events.AbstractEvent;
 import com.example.cqrsbankingapp.events.EventType;
 import jakarta.persistence.Entity;
@@ -13,7 +14,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 public class AccountCreateEvent extends AbstractEvent {
-    public AccountCreateEvent(Object payload) {
+    public AccountCreateEvent(Account payload) {
         super(null, EventType.ACCOUNT_CREATE, payload);
     }
 
