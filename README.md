@@ -19,14 +19,7 @@ using JWT for authentication and authorization. Additionally, Debezium is integr
 * Bank Card Management: Create bank cards linked to a single account.
 * Transaction Handling: Perform transactions between different cards.
 * Balance Inquiry: View the balance of cards and accounts.
-* For further reference, please consider the following sections:
 
 
 
-### Future Plans:
 
-* CQRS & Event Sourcing Theory: Explanation of the CQRS pattern and event sourcing concepts.
-* Application Development: Creation of events, aggregates, services, and controllers.
-* Spring Security Setup: Securing the application with JWT.
-* Debezium Configuration: Setting up Debezium for event handling.
-* Project Refactoring: Extracting common code and creating a dedicated event handler application.
