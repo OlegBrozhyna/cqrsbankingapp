@@ -12,7 +12,13 @@ using JWT for authentication and authorization. Additionally, Debezium is integr
 * PostgreSQL
 * Spring Security (JWT)
 * Debezium
-*
+
+### Pattern :
+
+* CQRS (Command Query Responsibility Segregation) separates operations into commands (for modifying system state) and
+  queries (for reading data), allowing for optimized data handling and improved scalability.
+* Event Sourcing stores the history of changes as a sequence of events instead of just saving the current state. This
+  provides a complete audit trail of changes and the ability to recreate the system's state at any point in time.
 
 ### Key Features:
 
