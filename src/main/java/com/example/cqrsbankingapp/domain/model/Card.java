@@ -34,6 +34,10 @@ public class Card {
     )
     private List<Transaction> transactions;
 
+    public Card(Account account) {
+        this.account = account;
+    }
+
     @ManyToOne
     private Account account;
 
