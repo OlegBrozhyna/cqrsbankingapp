@@ -5,15 +5,16 @@ create table accounts
     balance numeric not null default 0
 );
 
-create table clients
+CREATE TABLE clients
 (
-    id         varchar(36) primary key,
-    name       varchar     not null,
-    username   varchar     not null unique,
-    password   varchar     not null,
-    account_id varchar(36) not null,
-    constraint clients_accounts foreign key (account_id) references accounts (id)
+    id         VARCHAR(36) PRIMARY KEY,
+    name       VARCHAR(255) NOT NULL,
+    username   VARCHAR(255) NOT NULL UNIQUE,
+    password   VARCHAR(255) NOT NULL,
+    account_id VARCHAR(36) NOT NULL,
+    CONSTRAINT fk_clients_accounts FOREIGN KEY (account_id) REFERENCES accounts (id)
 );
+
 
 create table cards
 (
