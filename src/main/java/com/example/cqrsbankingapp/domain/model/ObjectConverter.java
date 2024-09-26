@@ -29,3 +29,25 @@ public class ObjectConverter implements AttributeConverter<Object, String> {
         }
     }
 }
+//
+///**
+// * @SneakyThrows allows bypassing the need to explicitly handle checked exceptions,
+// * such as JsonProcessingException, which might be thrown by ObjectMapper methods.
+// * It reduces boilerplate code but should be used with caution, as it hides potential exceptions.
+// */
+
+//public class ObjectConverter implements AttributeConverter<Object, String> {
+//
+//    @SneakyThrows
+//    @Override
+//    public String convertToDatabaseColumn(Object attribute) {
+//        ObjectMapper objectMapper = new ObjectMapper();
+//        return objectMapper.writeValueAsString(attribute);
+//    }
+//
+//    @Override
+//    public Object convertToEntityAttribute(String dbData) {
+//        ObjectMapper objectMapper = new ObjectMapper();
+//        return objectMapper.convertValue(dbData, Object.class);
+//    }
+//}
