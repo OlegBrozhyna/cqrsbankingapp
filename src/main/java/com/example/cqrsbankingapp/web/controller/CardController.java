@@ -7,7 +7,6 @@ import com.example.cqrsbankingapp.web.dto.TransactionDto;
 import com.example.cqrsbankingapp.web.dto.mapper.CardMapper;
 import com.example.cqrsbankingapp.web.dto.mapper.TransactionMapper;
 import lombok.RequiredArgsConstructor;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 
