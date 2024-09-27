@@ -34,4 +34,9 @@ public class CardServiceImpl implements CardService {
         Card card = new Card(client.getAccount());
         commandService.create(card);
     }
+
+    @Override
+    public boolean existsByNumberAndDate(String number, String date) {
+        return queryService.existsByNumberAndDate(number,date);
+    }
 }
